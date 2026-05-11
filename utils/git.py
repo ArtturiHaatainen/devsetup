@@ -3,7 +3,7 @@ from pathlib import Path
 
 def init_git(project_path: Path):
     subprocess.run(
-    ["git", "init"],
+    ["git", "init", "-b", "main"],
     cwd=project_path
     )
 
