@@ -4,18 +4,23 @@ DevSetup is a Python-based CLI tool for quickly bootstrapping new development pr
 
 The goal of the project is to automate repetitive setup tasks when starting a new software project, such as creating folder structures, initializing Git repositories, generating common files, and setting up Python virtual environments.
 
-This project was created as a practical portfolio project to improve automation, scripting, and developer workflow skills. Also I wanted to automatize my own development.
+This project was built as a portfolio project to demonstrate:
 
+- Python CLI development
+- Packaging with pip
+- src-layout project structure
+- Developer workflow automation
 ---
 
 ## Features
 
 Current features:
 
-- Create a new project directory
+- Create a new project structure
 - Generate a README.md file based on the project
 - Generate a .gitignore file
 - Initialize a Git repository
+- Works globally as CLI tool
 
 Planned features:
 
@@ -25,13 +30,14 @@ Planned features:
 - VS Code workspace setup
 - Environment validation commands
 - Configurable project templates
-- Cross-platform support
+- Doctor mode
 
 ---
 
 ## Technologies
 
 - Python 3
+- Setuptools / pip
 - pathlib
 - subprocess
 - Git
@@ -43,33 +49,36 @@ Planned features:
 
 ```text
 devsetup/
-├── main.py
-├── templates/
-├── utils/
-│   ├── filesystem.py
-│   ├── git.py
-│   └── python_env.py
-└── config/
+├── src/
+│   └── devsetup/
+│       ├── cli.py
+│       ├── commands/
+│       ├── utils/
+│       └── templates/
+├── pyproject.toml
+└── README.md
 ```
 ## Requirements
 - Python 3
 - Git
+- pip
 - Linux/WSL
 
 ## Installation
 ```
 git clone https://github.com/ArtturiHaatainen/devsetup.git (https version)
 cd devsetup
-python3 main.py
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -e .
 ```
 
 ## Example usage
 ```
-Project name: test
-
-[+] Created project folder
-[+] Created README.md
-[+] Created .gitignore
-[+] Initialized Git repository
-[+] Created Python virtual environment
+devsetup create my-project
+Project name: my-project
+[OK] Folder created
+[OK] README created
+[OK] Git initialized
+[OK] Gitignore created
 ```
