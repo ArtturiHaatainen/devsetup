@@ -41,6 +41,7 @@ except Exception as e:
 
 
 init_git(project_path)
+log_ok("Git initialized")
 
 try:
     create_gitignore(project_path)
