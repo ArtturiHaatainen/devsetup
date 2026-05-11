@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+src/devsetup/__init__.py
+src/devsetup/cli.py
+src/devsetup.egg-info/PKG-INFO
+src/devsetup.egg-info/SOURCES.txt
+src/devsetup.egg-info/dependency_links.txt
+src/devsetup.egg-info/entry_points.txt
+src/devsetup.egg-info/top_level.txt
+src/devsetup/commands/__init__.py
+src/devsetup/commands/create.py
+src/devsetup/commands/doctor.py
+src/devsetup/utils/__init__.py
+src/devsetup/utils/git.py
+src/devsetup/utils/logger.py
