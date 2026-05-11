@@ -11,7 +11,25 @@ print(f"Created project: {project_name}")
 
 readme = project_path / "README.md"
 
-readme.write_text(f"# {project_name}\n")
+# Readme content
+
+content = f"""# {project_name}
+
+## Features
+
+## Installation
+
+## Technologies
+
+## Project Structure
+
+## Requirements
+
+## Example usage
+"""
+
+readme.write_text(content)
+
 
 init_git(project_path)
 git_ignore(project_path)
