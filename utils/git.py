@@ -6,7 +6,8 @@ def init_git(project_path: Path):
     ["git", "init", "-b", "main"],
     cwd=project_path,
     stdout=subprocess.DEVNULL,
-    stderr=subprocess.DEVNULL
+    stderr=subprocess.DEVNULL,
+    check=True
     )
 
     
