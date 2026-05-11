@@ -5,6 +5,11 @@ project_name = input("Project name: ")
 
 project_path = Path(project_name)
 
+# Program exits safely if project with the same name already exists
+if project_path.exists():
+        print("Project already exists")
+        exit(1)
+
 project_path.mkdir()
 
 print(f"Created project: {project_name}")
