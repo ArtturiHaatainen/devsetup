@@ -4,7 +4,6 @@ from devsetup.utils.logger import log_ok
 
 
 def create_project(project_name: str):
-    project_name = input("Project name: ")
 
     project_path = Path(project_name)
         
