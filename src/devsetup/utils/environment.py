@@ -9,7 +9,11 @@ class CheckResult:
     available: bool
     version: str | None = None
 def detect_os():
-    return platform.system()
+    return CheckResult(
+        name="OS",
+        available=True,
+        version=platform.system()
+    )
 
 def check_git() -> CheckResult:
     git_path = shutil.which("git")
