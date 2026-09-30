@@ -21,7 +21,6 @@ Current features:
 - Generate a .gitignore file
 - Initialize a Git repository
 - Works globally as CLI tool
-- Doctor mode
 
 Planned features:
 
@@ -31,6 +30,7 @@ Planned features:
 - VS Code workspace setup
 - Environment validation commands
 - Configurable project templates
+- Doctor mode
 
 ---
 
@@ -82,3 +82,6 @@ Project name: my-project
 [OK] Git initialized
 [OK] Gitignore created
 ```
+### Devsetup Doctor Mode example usage
+
+![Doctor Mode](images/doctor_mode.png)
